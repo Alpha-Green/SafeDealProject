@@ -13,7 +13,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.iVSplash.alpha = 0f
-        binding.iVSplash.animate().setDuration(1500).alpha(1f).withEndAction{
+        binding.iVSplash.animate().setDuration(10000).alpha(1f).withEndAction{
             val intent = Intent(this, UserGuide::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
