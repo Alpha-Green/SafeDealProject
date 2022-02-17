@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.uche.safedealproject.databinding.ActivityUserGuideBinding
+import com.uche.safedealproject.views.LoginScreen
+import com.uche.safedealproject.views.SignUpScreen
 
 class UserGuide : AppCompatActivity() {
     private lateinit var binding: ActivityUserGuideBinding
@@ -13,7 +15,7 @@ class UserGuide : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.sign.setOnClickListener{
-            val intent = Intent(this,SignUpScreen::class.java)
+            val intent = Intent(this, SignUpScreen::class.java)
             startActivity(intent)
         }
 
